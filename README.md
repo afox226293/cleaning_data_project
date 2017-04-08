@@ -16,10 +16,11 @@ As per the instructions of the project the script ```run_analysis.R``` does the 
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-The file ```run_analysis.R``` does not assume that the files required are already stored locally, if they are not they will be downloaded to a temporary file and extracted to your working directory.
+## How to run
+Simply download the script run_analysis.R and run. The file ```run_analysis.R``` does not assume that the files required are already stored locally, if they are not they will be downloaded to a temporary file and extracted to your working directory.
 
 ## The output
-The output dataset from ```run_analysis.R``` contains 180 observations and 68 variables.  There are six observations per subject, one for each activity. Variables one and two ('subject' and 'activitydescription' respectively) are for the person observed and each of the six activities they undertook.  Each variable name summarises the data that it represents.  The summary data provided in the ```tidyoutput.txt``` includes summary averages for all the variables concerned with either the mean or standard deviation in the original data.  All averages are calculated using the function ```mean()```.  Data has been summarised to show the average value for each variable per subject/activity.
+The output dataset from ```run_analysis.R``` will be saved to your current working directory. It is titled ```tidyoutput.txt``` and contains 180 observations and 68 variables.  There are six observations per subject, one for each activity. Variables one and two ('subject' and 'activitydescription' respectively) are for the person observed and each of the six activities they undertook.  Each variable name summarises the data that it represents.  The summary data provided in the ```tidyoutput.txt``` includes summary averages for all the variables concerned with either the mean or standard deviation in the original data.  All averages are calculated using the function ```mean()```.  Data has been summarised to show the average value for each variable per subject/activity.
 
 ## Additional information
 I would recommend using the code `read.table("tidyoutput.txt", header = TRUE)` to extract the contents of ```tidyoutput.txt```  

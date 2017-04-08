@@ -138,15 +138,18 @@ $(document).ready(function () {
 <li>From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.</li>
 </ol>
 </blockquote>
-<p>The file <code>run_analysis.R</code> does not assume that the files required are already stored locally, if they are not they will be downloaded to a temporary file and extracted to your working directory.</p>
+</div>
+<div id="how-to-run" class="section level2">
+<h2>How to run</h2>
+<p>Simply download the script run_analysis.R and run. The file <code>run_analysis.R</code> does not assume that the files required are already stored locally, if they are not they will be downloaded to a temporary file and extracted to your working directory.</p>
 </div>
 <div id="the-output" class="section level2">
 <h2>The output</h2>
-<p>The output dataset from <code>run_analysis.R</code> contains 180 observations and 68 variables. There are six observations per subject, one for each activity. Variables one and two (‘subject’ and ‘activitydescription’ respectively) are for the person observed and each of the six activities they undertook. Each variable name summarises the data that it represents. The summary data provided in the <code>tidyoutput.txt</code> includes summary averages for all the variables concerned with either the mean or standard deviation in the original data. All averages are calculated using the function <code>mean()</code>. Data has been summarised to show the average value for each variable per subject/activity.</p>
+<p>The output dataset from <code>run_analysis.R</code> will be saved to your current working directory. It is titled <code>tidyoutput.txt</code> and contains 180 observations and 68 variables. There are six observations per subject, one for each activity. Variables one and two (‘subject’ and ‘activitydescription’ respectively) are for the person observed and each of the six activities they undertook. Each variable name summarises the data that it represents. The summary data provided in the <code>tidyoutput.txt</code> includes summary averages for all the variables concerned with either the mean or standard deviation in the original data. All averages are calculated using the function <code>mean()</code>. Data has been summarised to show the average value for each variable per subject/activity.</p>
 </div>
 <div id="additional-information" class="section level2">
 <h2>Additional information</h2>
-<p>I would recommend using the code <code>View(read.table(&quot;tidyoutput.txt&quot;, header = TRUE))</code> to view the contents of <code>tidyoutput.txt</code><br />
+<p>I would recommend using the code <code>read.table(&quot;tidyoutput.txt&quot;, header = TRUE)</code> to extract the contents of <code>tidyoutput.txt</code><br />
 Further details on the output of the script can be found in codebook.md.</p>
 </div>
 </div>
